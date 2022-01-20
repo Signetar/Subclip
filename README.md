@@ -13,7 +13,7 @@ import subclip
 ```python
 subclip.syllables("carbonmonoxide")
 ```
-This prints:
+This outputs:
 ```python
 car-bon-mon-ox-ide
 ```
