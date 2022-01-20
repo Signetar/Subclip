@@ -50,7 +50,6 @@ def syllable_identifier(matrixdata):
             final.append([])
         elif c == 1 and final[-1][-1][0] == 1:
             final[-1].append(i)
-    #go through final and delete the last element if it is empty
     for i in range(len(final)-1, -1, -1):
         if len(final[i]) == 0:
             del final[i]
@@ -63,7 +62,7 @@ def syllable_identifier(matrixdata):
         final_string.append(reconstruct(i))
     return (final, final_string)
 
-
+#################################
 def merge_strings(string1, string2):
     return string1 + string2
 
@@ -79,7 +78,7 @@ def merge_names(splitnames, desired_syllables=None, desired_length=None):
     if desired_syllables != None:
         combinations = [x for x in combinations if len(syllable_identifier(show_vowels_consonants_matrix(x))[1]) == desired_syllables]
     return combinations
-
+#################################
 
 def syllables(string):
     return "-".join(syllable_identifier(show_vowels_consonants_matrix(string))[1])
