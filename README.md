@@ -17,3 +17,6 @@ This outputs:
 ```python
 car-bon-mon-ox-ide
 ```
+But take note that this only works with lowercase strings.
+
+
